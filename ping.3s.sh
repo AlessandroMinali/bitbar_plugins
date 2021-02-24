@@ -1,8 +1,7 @@
 #!bin/bash
 
 # See internet connectivity status
-ping -o -t 1 google.ca > /dev/null 2>&1
-if [ $? -eq 0 ];
+if $(ping -o -t 1 google.ca > /dev/null 2>&1);
 then
 echo "OK"
 else
