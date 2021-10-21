@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # See internet connectivity status
 if $(ping -o -t 1 google.ca > /dev/null 2>&1);
